@@ -1,0 +1,125 @@
+/*******************************
+*                              *
+*       MEDIA QUERIES          *
+*                              *
+*******************************/
+
+@media only screen and (min-width: 1100px) {
+    #banner img {
+        left: 17px;
+        width: 40%;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    .navbar-nav,
+    .dropdown-menu {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        background: var(--white-text);
+        padding: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        color: var(--very-dark-gray-blue) !important;
+    }
+    
+    .navbar-nav .dropdown-menu {
+        background-color: var(--grayish-blue-footer-text);
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .fa-solid {
+        color: var(--light-red);
+     }
+
+    .navbar-nav .btn-brand {
+        background: var(--very-light-red-CTA-hover-background);
+        color: var(--white-text);
+    }
+
+    #banner img {
+        left: 17px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .row-reverse {
+        -webkit-box-orient: vertical;
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: column-reverse;
+                    flex-direction: column-reverse;
+    }
+
+    .section-bg {
+        background-position: center !important;
+    }
+
+    #hero {
+        background-image: url(/assets/images/bg-pattern-intro-mobile.svg);
+    }
+
+    #about .section-bg {
+        background-image: url(../images/illustration-editor-mobile.svg);
+    }
+    #banner {
+        height: 60vh;
+    }
+
+    #banner img {
+        width: 60%;
+    }
+
+    #banner .col-md-6 {
+        margin-top: 119px;
+    }
+
+    #features .section-bg {
+        background-image: url(../images/illustration-laptop-mobile.svg);
+    }
+}
+
+@media only screen and (max-width:450px) {
+
+    .navbar  .logo {
+        font-size: 1.5rem;
+    }
+
+    #banner {
+        text-align: center;
+    }
+    
+    #banner p{
+       margin: 0 auto;
+    }
+
+    #banner img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+    #footer .logo {
+        margin-bottom: 55px;
+    }
+
+    #footer .box-links {
+        margin-bottom: 25px;
+    }
+
+    #footer .box-title {
+        margin-bottom: -5px;
+    }
+}

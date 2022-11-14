@@ -22,11 +22,12 @@
 --white-text: hsl(0, 0%, 100%);
 --grayish-blue-footer-text: hsl(240, 2%, 79%);
 --very-dark-grayish-blue: hsl(207, 13%, 34%);
---very-dark-black-blue-footer: hsl(240, 10%, 16%)
+--very-dark-black-blue-footer: hsl(240, 10%, 16%);
 
 /* Background gradient - Intro/CTA mobile nav: */
 --very-light-red: hsl(13, 100%, 72%);
 --light-red: hsl(353, 100%, 62%);
+--light-red-transparent: rgb(255, 61, 84, 0.8);
 
 /* Background-gradient - body: */
 --very-dark-gray-blue: hsl(237, 17%, 21%);
@@ -40,8 +41,7 @@
     box-sizing: border-box;
     font-family: 'Overpass', sans-serif;
     font-family: 'Ubuntu', sans-serif;
-    overflow-x: hidden;
-
+    transition: all 0.3s ease-in-out;
 }
 
 a {
@@ -49,7 +49,7 @@ a {
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--very-dark-grayish-blue);
 }
 
@@ -64,8 +64,15 @@ p {
 }
 
 .box-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--very-dark-blue-headings);
+}
+
+.logo {
+    color: var(--white-text) !important;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
 }
 
 img {
@@ -103,6 +110,10 @@ img {
     margin: 100px 0;
 }
 
+.fa-solid {
+   color: var(--white-text);
+}
+
 /*******************************
 *                              *
 *        NAVBAR SECTION        *
@@ -112,11 +123,40 @@ nav .nav-link {
     color: var(--white-text) !important;
 }
 
-nav .navbar-brand {
-    color: var(--white-text) !important;
-    font-size: 1.3rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
+#menuClose {
+    display: none;
+ }
+ 
+ #menuClose.active {
+     display: block;
+ }
+ 
+ #menuOpen.active {
+    display: none;
+ }
+
+ #angleDown {
+    display: none;
+ }
+
+ #angleDown.active {
+    display: block;
+ }
+ 
+#angleUp.active {
+    display: none;
+}
+
+#navBar.nav-colored {
+    background-color: var(--light-red-transparent);
+    margin-top: -5px;
+
+}
+
+#navBar.nav-transparent {
+    background-color: transparent;
+    margin-top: 15px;
+  
 }
 
 /*******************************
@@ -155,12 +195,84 @@ background-image: url(../images/illustration-editor-desktop.svg);
 background-position: 100px 50%;
 background-size: cover;
 background-repeat: no-repeat;
-z-index: 1000;
-display: block;
-position: relative;
+height: 40vh;
 }
 
-#about .subtitle {
+.subtitle {
     margin-bottom: 50px;
- 
+}
+
+/*******************************
+*                              *
+*        BANNER SECTION        *
+*                              *
+*******************************/
+#banner {
+    background-color: var(--very-dark-gray-blue);
+    background-image: url(/assets/images/bg-pattern-circles.svg);
+    background-position: -10% -100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 15%;
+    border-top-right-radius: 15%;
+    height: 50vh;
+}
+
+#banner .box-title,
+#banner p{
+  color: var(--white-text);
+
+}
+
+#banner p{
+   width: 80%;
+}
+
+#banner .col-md-6{
+ margin-top: 90px;
+}
+
+#banner img {
+    width: 45%;
+    position: absolute;
+    margin-top: -85px;
+}
+
+/*******************************
+*                              *
+*       FEATURES SECTION       *
+*                              *
+*******************************/
+#features {
+    margin-top: 100px;
+}
+
+#features .section-bg{
+    background-image: url(../images/illustration-laptop-desktop.svg);
+    background-position: -100px 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+/*******************************
+*                              *
+*            FOOTER            *
+*                              *
+*******************************/
+#footer {
+    background: var(--very-dark-black-blue-footer) !important;
+    width: 100%;
+    padding: 25px 8px;
+    border-top-right-radius: 15%;
+}
+
+#footer .nav-link {
+    color: var(--white-text);
+    font-weight: 600;
+}
+
+
+.attribution {
+    padding: 10px 5px;
 }

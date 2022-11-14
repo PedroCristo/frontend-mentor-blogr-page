@@ -8,8 +8,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" />
+  <!-- FONT-AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <!-- MY CSS -->
   <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
 
   <!-- SITE TITLE -->
   <title>Frontend Mentor | [Blogr]</title>
@@ -17,17 +20,18 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav id="navBar" class="navbar navbar-expand-lg fixed-top">
     <div class="container mt-3">
-      <a class="navbar-brand ml-5" href="#">Blogr</a>
+      <a class="navbar-brand ml-5 logo" href="#">Blogr</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span id="menuOpen" class="navbar-toggler-icon mt-2"><img src="./assets/images/icon-hamburger.svg" alt="Open Menu Icon" onclick="navToggle()"></span>
+        <span id="menuClose" class="navbar-toggler-icon mt-2"><img src="./assets/images/icon-close.svg" alt="Open Menu Icon" onclick="navToggle()"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto pl-5">
+      <div class="collapse navbar-collapse mt-3" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             Prodcut
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="dropDownToggler()">
+           Prodcut <i id="angleDown" class="fa-solid fa-angle-up"></i> <i id="angleUp" class="fa-solid fa-angle-down"></i> 
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Overview</a>
@@ -38,8 +42,8 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             Company
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="dropDownToggler()">
+             Company <i id="angleDown" class="fa-solid fa-angle-up"></i> <i id="angleUp" class="fa-solid fa-angle-down"></i> 
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">About</a>
@@ -49,8 +53,8 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             Connect
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="dropDownToggler()">
+             Connect <i id="angleDown" class="fa-solid fa-angle-up"></i> <i id="angleUp" class="fa-solid fa-angle-down"></i> 
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Contact</a>
@@ -59,7 +63,7 @@
             </div>
           </li>
         </ul>
-        <ul class="navbar-nav pr-5 ">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#">Login</a>
           </li>
@@ -87,7 +91,7 @@
   <section id="about" class="section-margin">
     <h3 class="subtitle">Designed for the future</h3>
     <div class="container">
-      <div class="row">
+      <div class="row row-reverse">
         <div class="col-md-6 about-text">
           <h4 class="box-title mb-3">Introducing an extensible editor</h4>
           <p class="mb-4">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
@@ -106,69 +110,92 @@
   <!-- END OF ABOUT SECTION -->
 
 
+<!-- BANNER SECTION -->
+<section id="banner" class="section-margin">
+ <div class="container">
+   <img src="./assets/images/illustration-phones.svg" alt="Mobile Photo">
+  <div class="row">
+    <div class="col-md-6">
+    </div>
+    <div class="col-md-6">
+      <h4 class="box-title mb-3"> State of the Art Infrastructure</h4>
+          <p class="mb-4">  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive..</p>
+    </div>
+  </div>
+ </div>
+</section>
+<!-- END OF  BANNER SECTION -->
 
+  <!-- FEATURES SECTION -->
+  <section id="features" class="section-margin">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 section-bg">
+        </div>
+        <div class="col-md-6 about-text">
+          <h4 class="box-title mb-3">Free, open, simple</h4>
+          <p class="mb-4">  Blogr is a free and open source application backed by a large community of helpful developers. It supports
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn..</p>
+            <h4 class="box-title mb-3">Powerful tooling</h4>
+            <p class="mb-4">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
+              but capable of producing even the most complicated sites.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END OF FEATURES SECTION -->
 
-
-
-
-
-
-<br><b><br><br><br><br>
-<br></b>
-
-<br><b><br><br><br><br>
-<br></b>
-
-<br><b><br><br><br><br>
-<br></b>
-
-<br><b><br><br><br><br>
-<br></b>
-
-
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
-  but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-lg-3">
+            <h3 class="logo">Blogr</h3>
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <div class="box-links">
+            <h4 class="nav-link box-title mb-3">Product</h4>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">Overview</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Manav-link
+            <a class="nav-link" href="#">Integrations</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <h4 class="nav-link box-title mb-3">Company</h4>
+          <div class="box-links">
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Team</a>
+            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#">Careers</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <h4 class="nav-link box-title mb-3">Connect</h4>
+          <div class="box-links">
+            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">Newsletter</a>
+            <a class="nav-link" href="#">Linkedin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://pedro-portfolio-website.netlify.app/" target="_blank">Pedro Cristo</a>.
   </div>
+  <!-- END OF FOOTER -->
+
 </body>
 <!-- BOOTSTRAP JQUERY -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+
+<!-- MY JS -->
+<script src="./assets/js/main.js"></script>
 </html>

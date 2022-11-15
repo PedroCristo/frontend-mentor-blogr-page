@@ -18,6 +18,10 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
+  - [TESTIMG](#testimg)
+    - [HTML Results](#html-results)
+    - [CSS Results](#css-results)
+      - [Testing was done using the following tools:](#testing-was-done-using-the-following-tools)
     - [Useful resources](#useful-resources)
   - [Author](#author)
   - [Acknowledgments](#acknowledgments)
@@ -53,6 +57,18 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
+## TESTIMG
+
+### HTML Results
+![](./assets/readme/images/fronteend-mentor-blogr-html-test-result.jpg)
+
+### CSS Results
+![](./assets/readme/images/fronteend-mentor-blogr-css-test-result.jpg)
+
+#### Testing was done using the following tools:
+- [Validator.w3](https://validator.w3.org/)
+- [Jigsaw.w3](https://jigsaw.w3.org/css-validator/)
+
 
 ### Useful resources
 
@@ -64,7 +80,6 @@ Users should be able to:
 - Website - [Pedro Cristo](https://pedro-portfolio-website.netlify.app/)
 - Frontend Mentor - [@Pcristo](https://www.frontendmentor.io/profile/Pcristo)
 - Linkedin - [Pedro Cristo](https://www.linkedin.com/in/pedro-cristo/)
-
 
 
 ## Acknowledgments

@@ -4,11 +4,13 @@ This is my 4ª project for Frontend Mentor.
 Blogr website, built using HTML, CSS, Bootstrap and JavaScript. This was a great challenge where I could improve my knowledge of web development. 
 Thanks, Frontend Mentor.
 
+## Note
 This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
 - [Frontend Mentor - Blogr landing page solution](#frontend-mentor---blogr-landing-page-solution)
+  - [Note](#note)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)

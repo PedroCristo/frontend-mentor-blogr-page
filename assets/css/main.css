@@ -39,7 +39,6 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Overpass', sans-serif;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease-in-out;
 }
@@ -125,28 +124,22 @@ nav .nav-link {
 
 #menuClose {
     display: none;
- }
+}
  
- #menuClose.active {
+#menuClose.active {
      display: block;
- }
+}
  
- #menuOpen.active {
-    display: none;
- }
-
- #angleDown {
-    display: none;
- }
-
- #angleDown.active {
-    display: block;
- }
- 
-#angleUp.active {
+#menuOpen.active {
     display: none;
 }
 
+#angleUp1, 
+#angleUp2,
+#angleUp3 {
+    transform: rotate(180deg);
+}
+ 
 #navBar.nav-colored {
     background-color: var(--light-red-transparent);
     margin-top: -5px;
@@ -156,7 +149,10 @@ nav .nav-link {
 #navBar.nav-transparent {
     background-color: transparent;
     margin-top: 15px;
-  
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
 }
 
 /*******************************
@@ -164,7 +160,6 @@ nav .nav-link {
 *         HERO SECTION         *
 *                              *
 *******************************/
-
 #hero {
     background-image: url(/assets/images/bg-pattern-intro-desktop.svg);
     background-color: var(--light-red);
@@ -183,13 +178,11 @@ nav .nav-link {
  text-align: center;
 }
 
-
 /*******************************
 *                              *
 *        ABOUT SECTION         *
 *                              *
 *******************************/
-
 #about .section-bg{
 background-image: url(../images/illustration-editor-desktop.svg);
 background-position: 100px 50%;
@@ -271,7 +264,6 @@ height: 40vh;
     color: var(--white-text);
     font-weight: 600;
 }
-
 
 .attribution {
     padding: 10px 5px;

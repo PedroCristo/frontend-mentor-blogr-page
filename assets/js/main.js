@@ -2,9 +2,9 @@
 
 let menuOpen = document.getElementById("menuOpen")
 let menuClose = document.getElementById("menuClose")
-let angleUp = document.getElementById("angleUp")
-let angleDown = document.getElementById("angleDown")
-
+let angleUp1 = document.getElementById("angleUp1")
+let angleUp2 = document.getElementById("angleUp2")
+let angleUp3 = document.getElementById("angleUp3")
 
 
 function navToggle() {
@@ -13,10 +13,18 @@ function navToggle() {
 }
 
 
-// function dropDownToggler() {
-//     angleUp.classList.toggle("active")
-//     angleDown.classList.toggle("active")
-// }
+function dropDownToggler1() {
+    angleUp1.classList.toggle("active")
+    angleDown.classList.toggle("active")
+}
+function dropDownToggler2() {
+    angleUp2.classList.toggle("active")
+    angleDown.classList.toggle("active")
+}
+function dropDownToggler3() {
+    angleUp3.classList.toggle("active")
+    angleDown.classList.toggle("active")
+}
 
 
 // Change css styles on scroll

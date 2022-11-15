@@ -1,4 +1,3 @@
-
 /*******************************
 *                              *
 *        GOOGLE FONTS          *
@@ -40,6 +39,8 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -137,7 +138,9 @@ nav .nav-link {
 #angleUp1, 
 #angleUp2,
 #angleUp3 {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
  
 #navBar.nav-colored {

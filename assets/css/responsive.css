@@ -47,13 +47,17 @@
      #angleUp1, 
      #angleUp2,
      #angleUp3 {
-         transform: rotate(180deg);
+         -webkit-transform: rotate(180deg);
+             -ms-transform: rotate(180deg);
+                 transform: rotate(180deg);
      }
  
      #angleUp1.active, 
      #angleUp2.active, 
      #angleUp3.active {
-         transform: rotate(0deg);
+         -webkit-transform: rotate(0deg);
+             -ms-transform: rotate(0deg);
+                 transform: rotate(0deg);
          color: var(--very-dark-desaturated-blue);
      }
 
